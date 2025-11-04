@@ -1,0 +1,55 @@
+# 1. OS および IDE 関連ファイル
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 2. 環境設定ファイル
+.env
+.env.*
+*.local # .env.localなどを無視
+
+# 3. Frontend (React/Vite) 関連
+/frontend/node_modules # 依存関係
+/frontend/dist         # Vite ビルド出力
+/frontend/dist-ssr     # SSR ビルド出力
+/frontend/.vite/       # Vite キャッシュ
+# ログファイル
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+/frontend/lerna-debug.log*
+
+# 4. Backend (Go + Air) 関連
+# Goのビルド済みバイナリとテストファイル
+*.exe
+*.out
+*.test
+# Goモジュールキャッシュと一時ディレクトリ
+/backend/bin/
+/backend/tmp/
+/backend/vendor/
+/backend/logs/ # Airなどで出力されるログを想定
+
+# 5. Docker 関連
+docker-compose.override.yml # 個人用のオーバーライド設定
+.docker/ # Dockerの一時ファイル
+**/tmp/ # コンテナ内の一時ファイル
+**/logs/ # コンテナ内のログファイル
+
+# 6. ホットリロード関連
+**/.air.toml.local # Air の個人設定
+**/air_tmp/ # Air のビルド一時ディレクトリ
+
+# 7. 共通ログ / 一時ファイル
+*.log
+/logs
+/tmp
+/.tmp

@@ -1,4 +1,4 @@
-module github.com/kazu-1024/k-safe-ai-app
+module github.com/kazu-1024/potaslab-app
 
 go 1.24.0
 

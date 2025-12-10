@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/kazu-1024/k-safe-ai-app/internal/router"
+	"github.com/kazu-1024/potaslab-app/internal/router"
 )
 
 func main() {

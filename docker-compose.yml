@@ -4,7 +4,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       target: dev
-    container_name: K-Safe-frontend
+    container_name: PotasLab-frontend
     working_dir: /app
     command: [ "sh", "-c", "[ -d node_modules ] || npm ci && npm run dev -- --host 0.0.0.0 --port 5173" ]
     ports: [ "5173:5173" ]
@@ -20,7 +20,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
       target: dev
-    container_name: K-Safe-backend
+    container_name: PotasLab-backend
     working_dir: /app
     ports: [ "8080:8080" ]
     env_file:
@@ -33,7 +33,7 @@ services:
 
   db:
     image: postgres:15-bookworm
-    container_name: K-Safe-db
+    container_name: PotasLab-db
     ports: [ "5432:5432" ]
     env_file:
       - .env

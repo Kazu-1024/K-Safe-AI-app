@@ -1,13 +1,20 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import tailwindcss from '@tailwindcss/vite'
+import path from 'path'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   server: {
     host: true,
     port: 5173,
     strictPort: true,
-    watch: { usePolling: true }, // コンテナでのファイル監視を安定化
+    watch: { usePolling: true },
     proxy: {
       '/api': { target: 'http://api:8080', changeOrigin: true }
     }

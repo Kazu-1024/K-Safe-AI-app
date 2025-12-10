@@ -1,0 +1,15 @@
+# Git/システムファイル
+.git
+.gitignore
+.DS_Store
+
+# Go/Air の一時ファイル
+tmp/
+bin/
+
+# Docker関連
+Dockerfile
+docker-compose.yml
+
+# 環境変数
+.env

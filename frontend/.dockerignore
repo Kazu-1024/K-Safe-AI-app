@@ -1,4 +1,14 @@
+# 依存関係
 node_modules
+
+# ビルド成果物
 dist
+
+# Git/システムファイル
 .git
 .DS_Store
+.env
+.env.*
+
+# Docker関連
+Dockerfile

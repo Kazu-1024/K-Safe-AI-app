@@ -16,10 +16,10 @@ Thumbs.db
 *.local # .env.localなどを無視
 
 # 3. Frontend (React/Vite) 関連
-/frontend/node_modules # 依存関係
-/frontend/dist         # Vite ビルド出力
-/frontend/dist-ssr     # SSR ビルド出力
-/frontend/.vite/       # Vite キャッシュ
+/frontend/node_modules
+/frontend/dist
+/frontend/dist-ssr
+/frontend/.vite/
 # ログファイル
 /frontend/npm-debug.log*
 /frontend/yarn-debug.log*
@@ -36,17 +36,17 @@ Thumbs.db
 /backend/bin/
 /backend/tmp/
 /backend/vendor/
-/backend/logs/ # Airなどで出力されるログを想定
+/backend/logs/
 
 # 5. Docker 関連
-docker-compose.override.yml # 個人用のオーバーライド設定
-.docker/ # Dockerの一時ファイル
-**/tmp/ # コンテナ内の一時ファイル
-**/logs/ # コンテナ内のログファイル
+docker-compose.override.yml
+.docker/
+**/tmp/
+**/logs/
 
 # 6. ホットリロード関連
-**/.air.toml.local # Air の個人設定
-**/air_tmp/ # Air のビルド一時ディレクトリ
+**/.air.toml.local
+**/air_tmp/
 
 # 7. 共通ログ / 一時ファイル
 *.log
